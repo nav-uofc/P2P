@@ -53,7 +53,7 @@ CONSTRAINT [PK_INSTITUTION_ID] PRIMARY KEY CLUSTERED
 ----------------- USERS ----------------------
 CREATE TABLE [common].[USERS] (
 	[PK_USER_ID] [int] IDENTITY(1,1) NOT NULL,
-	[PASSWORD] [int] NOT NULL,
+	[PASSWORD] [nvarchar](50) NOT NULL,
 	[FIRST_NAME] [nvarchar](50) NULL,
 	[LAST_NAME] [nvarchar](50) NULL,
 	[MIDDLE_NAME] [nvarchar](50) NULL,
